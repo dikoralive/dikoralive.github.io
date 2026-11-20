@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dikora has moved</title>
+<meta name="robots" content="noindex, follow">
+<script>
+(function () {
+  var dest = 'https://dikoravastu.github.io' + location.pathname + location.search + location.hash;
+  var link = document.createElement("link");
+  link.rel = "canonical";
+  link.href = 'https://dikoravastu.github.io' + location.pathname;
+  document.head.appendChild(link);
+  location.replace(dest);
+})();
+</script>
+</head>
+<body>
+<p>This site has moved to <a href="https://dikoravastu.github.io/" id="fallback">https://dikoravastu.github.io/</a>.</p>
+<script>
+(function () {
+  var dest = 'https://dikoravastu.github.io' + location.pathname + location.search + location.hash;
+  var a = document.getElementById("fallback");
+  if (a) { a.href = dest; a.textContent = dest; }
+})();
+</script>
+</body>
+</html>
